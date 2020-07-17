@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CoffeeMangement.Data.Migrations
 {
     [DbContext(typeof(CoffeeDBContext))]
-    [Migration("20200717043416_Create_Entities")]
-    partial class Create_Entities
+    [Migration("20200717092712_Create_Entities_v1")]
+    partial class Create_Entities_v1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,9 +23,12 @@ namespace CoffeeMangement.Data.Migrations
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.Bill", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateCheckIn")
                         .HasColumnType("datetime2");
@@ -33,11 +36,14 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<DateTime>("DateCheckOut")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("discount")
                         .HasColumnType("int");
 
-                    b.Property<int>("idTable")
-                        .HasColumnType("int");
+                    b.Property<Guid>("idTable")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("status")
                         .HasColumnType("int");
@@ -45,7 +51,7 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<double>("totalPrice")
                         .HasColumnType("float");
 
-                    b.HasKey("id");
+                    b.HasKey("ID");
 
                     b.HasIndex("idTable");
 
@@ -54,10 +60,15 @@ namespace CoffeeMangement.Data.Migrations
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.BillInfo", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("count")
                         .HasColumnType("int");
@@ -65,10 +76,10 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<Guid>("idBill")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("idFood")
-                        .HasColumnType("int");
+                    b.Property<Guid>("idFood")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("id");
+                    b.HasKey("ID");
 
                     b.HasIndex("idBill");
 
@@ -79,13 +90,18 @@ namespace CoffeeMangement.Data.Migrations
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.Food", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("idCategory")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("idCategory")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("image")
                         .HasColumnType("nvarchar(max)");
@@ -96,7 +112,7 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<string>("price")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("ID");
 
                     b.HasIndex("idCategory");
 
@@ -105,25 +121,35 @@ namespace CoffeeMangement.Data.Migrations
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.FoodCategory", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("ID");
 
                     b.ToTable("FoodCategory");
                 });
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.TableFood", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("name")
                         .HasColumnType("nvarchar(max)");
@@ -131,19 +157,25 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<string>("status")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("ID");
 
                     b.ToTable("TableFood");
                 });
 
             modelBuilder.Entity("CoffeeMangement.Data.Entities.User", b =>
                 {
-                    b.Property<Guid>("UserID")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("DisplayName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("PassWord")
                         .HasColumnType("nvarchar(max)");
@@ -151,7 +183,7 @@ namespace CoffeeMangement.Data.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserID");
+                    b.HasKey("ID");
 
                     b.ToTable("User");
                 });
