@@ -7,14 +7,14 @@ using System.Text;
 namespace CoffeeMangement.Data.Entities
 {
     [Table("User")]
-    public class User
+    public class User : BaseEntity
     {
         public User()
         {
-            this.UserID = Guid.NewGuid();
+            this.ID = Guid.NewGuid();
+            this.CreatedDate = new DateTime();
+            this.ModifiedDate = new DateTime();
         }
-        [Key]
-        public Guid UserID { get; set; }
         public string UserName { get; set; }
         public string DisplayName { get; set; }
         public string PassWord { get; set; }

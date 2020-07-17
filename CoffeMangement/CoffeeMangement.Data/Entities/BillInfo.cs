@@ -7,17 +7,20 @@ using System.Text;
 namespace CoffeeMangement.Data.Entities
 {
     [Table("BillInfo")]
-    public class BillInfo
+    public class BillInfo : BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id{ get; set; }
+        public BillInfo()
+        {
+            this.ID = Guid.NewGuid();
+            this.CreatedDate = new DateTime();
+            this.ModifiedDate = new DateTime();
+        }
         public int count { get; set; }
         [ForeignKey("Bill")]
         public Guid idBill { get; set; }
         public Bill Bill { get; set; }
         [ForeignKey("Food")]
-        public int idFood { get; set; }
+        public Guid idFood { get; set; }
         public Food Food { get; set; }
     }
 }

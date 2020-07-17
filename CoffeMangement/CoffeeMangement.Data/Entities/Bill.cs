@@ -7,14 +7,14 @@ using System.Text;
 namespace CoffeeMangement.Data.Entities
 {
     [Table("Bill")]
-    public class Bill
+    public class Bill:BaseEntity
     {
         public Bill()
         {
-            this.id = Guid.NewGuid();
+            this.ID = Guid.NewGuid();
+            this.CreatedDate = new DateTime();
+            this.ModifiedDate = new DateTime();
         }
-        [Key]
-        public Guid id { get; set; }
         public DateTime DateCheckIn { get; set; }
         public DateTime DateCheckOut { get; set; }
         public int status { get; set; }
@@ -22,7 +22,7 @@ namespace CoffeeMangement.Data.Entities
         public double totalPrice { get; set; }
 
         [ForeignKey("TableFood")]
-        public int idTable { get; set; }
+        public Guid idTable { get; set; }
         public TableFood TableFood { get; set; }
         public ICollection<BillInfo> BillInfos { get; set; }
     }

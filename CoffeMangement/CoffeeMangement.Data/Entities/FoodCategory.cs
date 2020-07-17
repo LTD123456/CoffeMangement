@@ -7,11 +7,14 @@ using System.Text;
 namespace CoffeeMangement.Data.Entities
 {
     [Table("FoodCategory")]
-    public class FoodCategory
+    public class FoodCategory : BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
+        public FoodCategory()
+        {
+            this.ID = Guid.NewGuid();
+            this.CreatedDate = new DateTime();
+            this.ModifiedDate = new DateTime();
+        }
         public string name { get; set; }
         public ICollection<Food> Foods { get; set; }
     }
