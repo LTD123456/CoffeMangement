@@ -1,10 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="EF\CoffeeDBContextFactory.cs" />
     <Compile Remove="Migrations\20200717042817_Create_Entities.cs" />
     <Compile Remove="Migrations\20200717042817_Create_Entities.Designer.cs" />
     <Compile Remove="Migrations\20200717043131_Create_Entities.cs" />

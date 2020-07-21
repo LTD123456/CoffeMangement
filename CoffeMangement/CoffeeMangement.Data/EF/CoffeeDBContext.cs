@@ -12,6 +12,11 @@ namespace CoffeeMangement.Data.EF
         {
 
         }
+
+        public CoffeeDBContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Bill>().HasKey(k => k.ID);
@@ -21,6 +26,8 @@ namespace CoffeeMangement.Data.EF
             modelBuilder.Entity<TableFood>().HasKey(k => k.ID);
             modelBuilder.Entity<User>().HasKey(k => k.ID);
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+    => options.UseSqlServer("Server=LTHIENDUC\\SQLEXPRESS;Database=CoffeeManagement_v1;Trusted_Connection=True;");
         public DbSet<Bill> Bills { get; set; }
         public DbSet<BillInfo> BillInfos { get; set; }
         public DbSet<Food> Foods { get; set; }

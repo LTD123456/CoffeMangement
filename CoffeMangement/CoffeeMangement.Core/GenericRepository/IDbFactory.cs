@@ -5,8 +5,8 @@ using System.Text;
 
 namespace CoffeeMangement.Core.GenericRepository
 {
-    public interface IUnitOfWork
+    public interface IDbFactory:IDisposable
     {
-        void Commit();
+        CoffeeDBContext init();
     }
 }

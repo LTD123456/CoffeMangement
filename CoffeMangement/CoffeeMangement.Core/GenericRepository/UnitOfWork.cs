@@ -7,20 +7,22 @@ namespace CoffeeMangement.Core.GenericRepository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private CoffeeDBContext _context { get; }
+        private readonly IDbFactory dbFactory;
+        private CoffeeDBContext dbContext;
 
-        public UnitOfWork(CoffeeDBContext dbContext)
+        public UnitOfWork(IDbFactory dbFactory)
         {
-            _context = dbContext;
-        }
-        public void Dispose()
-        {
-            _context.Dispose();
+            this.dbFactory = dbFactory;
         }
 
-        public void saveChanges()
+        public CoffeeDBContext DbContext
         {
-            _context.SaveChanges();
+            get { return dbContext ?? (dbContext = dbFactory.init()); }
+        }
+
+        public void Commit()
+        {
+            DbContext.SaveChanges();
         }
     }
 }

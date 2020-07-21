@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CoffeeMangement.Data.EF
 {
-    class CoffeeDBContextFactory : IDesignTimeDbContextFactory<CoffeeDBContext>
+    public class CoffeeDBContextFactory : IDesignTimeDbContextFactory<CoffeeDBContext>
     {
         public CoffeeDBContext CreateDbContext(string[] args)
         {
