@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeMangement.Core.GenericRepository
 {
-    public class Repository<T> : IRepository<T> where T : BaseEntity
+    public class Repository<T> : IRepository<T> where T : class
     {
         #region Properties
         private CoffeeDBContext _dbContext;
@@ -20,7 +20,7 @@ namespace CoffeeMangement.Core.GenericRepository
         {
             get { return _dbContext ?? (_dbContext = DbFactory.init()); }
         }
-        #endregion
+        #endregion              
 
         public Repository(IDbFactory db)
         {

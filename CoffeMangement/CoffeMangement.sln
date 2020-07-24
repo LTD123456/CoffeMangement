@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.Data", "Cof
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.Core", "CoffeeMangement.Core\CoffeeMangement.Core.csproj", "{38CF9B0F-E46C-4650-A3C4-D84BAD28E56A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.WebAPI", "CoffeeMangement.WebAPI\CoffeeMangement.WebAPI.csproj", "{05B01666-5F84-4F58-A914-D530BAC1E308}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMangement.Services", "CoffeeMangement.Services\CoffeeMangement.Services.csproj", "{DC176210-33B9-46A4-B25F-129151F28800}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{38CF9B0F-E46C-4650-A3C4-D84BAD28E56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38CF9B0F-E46C-4650-A3C4-D84BAD28E56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38CF9B0F-E46C-4650-A3C4-D84BAD28E56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05B01666-5F84-4F58-A914-D530BAC1E308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B01666-5F84-4F58-A914-D530BAC1E308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05B01666-5F84-4F58-A914-D530BAC1E308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B01666-5F84-4F58-A914-D530BAC1E308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC176210-33B9-46A4-B25F-129151F28800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC176210-33B9-46A4-B25F-129151F28800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC176210-33B9-46A4-B25F-129151F28800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC176210-33B9-46A4-B25F-129151F28800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

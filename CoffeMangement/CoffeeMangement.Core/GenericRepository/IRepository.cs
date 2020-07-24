@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeMangement.Core.GenericRepository
 {
-    public interface IRepository<T> where T : BaseEntity
+    public interface IRepository<T> where T : class
     {
         void Add(T entity);
         void Update(T entity);

@@ -1,16 +1,15 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CoffeeMangement.Data.Entities
 {
-    [Table("User")]
-    public class User : IdentityUser <Guid>
+    [Table("Role")]
+    public class AppRole:IdentityRole<Guid>
     {
-        public User()
+        public AppRole()
         {
             this.Id = Guid.NewGuid();
             this.CreatedDate = new DateTime();
@@ -18,8 +17,5 @@ namespace CoffeeMangement.Data.Entities
         }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }
-        public string DisplayName { get; set; }
-        public string PassWord { get; set; }
-
     }
 }
