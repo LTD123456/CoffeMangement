@@ -1,0 +1,11 @@
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\bin\Debug\netcoreapp3.1\CoffeeMangement.Core.deps.json
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\bin\Debug\netcoreapp3.1\CoffeeMangement.Core.dll
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\bin\Debug\netcoreapp3.1\CoffeeMangement.Core.pdb
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.dll
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.pdb
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.csprojAssemblyReference.cache
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.AssemblyInfoInputs.cache
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.AssemblyInfo.cs
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.csproj.CopyComplete
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.dll
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Core\obj\Debug\netcoreapp3.1\CoffeeMangement.Core.pdb

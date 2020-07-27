@@ -1,0 +1,9 @@
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.deps.json
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.runtimeconfig.json
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.runtimeconfig.dev.json
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.dll
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\bin\Debug\netcoreapp3.1\CoffeeMangement.Data.pdb
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\obj\Debug\netcoreapp3.1\CoffeeMangement.Data.AssemblyInfoInputs.cache
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\obj\Debug\netcoreapp3.1\CoffeeMangement.Data.AssemblyInfo.cs
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\obj\Debug\netcoreapp3.1\CoffeeMangement.Data.dll
+D:\git\CoffeMangement\CoffeMangement\CoffeeMangement.Data\obj\Debug\netcoreapp3.1\CoffeeMangement.Data.pdb

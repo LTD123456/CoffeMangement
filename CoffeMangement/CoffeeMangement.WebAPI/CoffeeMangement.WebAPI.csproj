@@ -16,7 +16,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Scripts\clients\index.html" />
+    <None Include="wwwroot\Scripts\clients\index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Scripts\" />
+    <Folder Include="wwwroot\app\components\bills\" />
+    <Folder Include="wwwroot\app\components\billInfos\" />
+    <Folder Include="wwwroot\app\components\foodCategories\" />
+    <Folder Include="wwwroot\app\components\roles\" />
+    <Folder Include="wwwroot\app\components\tables\" />
+    <Folder Include="wwwroot\app\components\users\" />
+    <Folder Include="wwwroot\app\shared\footer\" />
+    <Folder Include="wwwroot\app\shared\navigation\" />
+    <Folder Include="wwwroot\app\shared\directive\" />
+    <Folder Include="wwwroot\Assets\" />
   </ItemGroup>
 
 

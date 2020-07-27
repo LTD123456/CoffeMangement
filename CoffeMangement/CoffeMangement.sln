@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.Core", "Cof
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.WebAPI", "CoffeeMangement.WebAPI\CoffeeMangement.WebAPI.csproj", "{05B01666-5F84-4F58-A914-D530BAC1E308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMangement.Services", "CoffeeMangement.Services\CoffeeMangement.Services.csproj", "{DC176210-33B9-46A4-B25F-129151F28800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMangement.Services", "CoffeeMangement.Services\CoffeeMangement.Services.csproj", "{DC176210-33B9-46A4-B25F-129151F28800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMangement.AngularJS", "CoffeeMangement.AngularJS\CoffeeMangement.AngularJS.csproj", "{1A29EAAF-EBEB-454E-836E-52FA8D68F7FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMangement.WebMVC", "CoffeeMangement.WebMVC\CoffeeMangement.WebMVC.csproj", "{C4952836-1CCE-4541-9335-D9C56C5F6C83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{DC176210-33B9-46A4-B25F-129151F28800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC176210-33B9-46A4-B25F-129151F28800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC176210-33B9-46A4-B25F-129151F28800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A29EAAF-EBEB-454E-836E-52FA8D68F7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A29EAAF-EBEB-454E-836E-52FA8D68F7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A29EAAF-EBEB-454E-836E-52FA8D68F7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A29EAAF-EBEB-454E-836E-52FA8D68F7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4952836-1CCE-4541-9335-D9C56C5F6C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4952836-1CCE-4541-9335-D9C56C5F6C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4952836-1CCE-4541-9335-D9C56C5F6C83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4952836-1CCE-4541-9335-D9C56C5F6C83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

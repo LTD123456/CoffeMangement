@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "angular.js@1.8.0",
+      "files": [ "angular.min.js", "angular-csp.css", "angular.js", "angular-csp.min.css", "angular.min.js.map" ],
+      "destination": "wwwroot/Scripts/plugins/angular/"
+    },
+    {
+      "library": "jquery@3.3.1",
+      "files": [
+        "jquery.min.js",
+        "jquery.js",
+        "jquery.min.map"
+      ],
+      "destination": "wwwroot/Scripts/plugins/jquery/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "bootstrap@4.5.0",
+      "destination": "wwwroot/Scripts/plugins/bootstrap/"
+    }
+  ]
+}

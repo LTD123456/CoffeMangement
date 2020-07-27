@@ -49,11 +49,31 @@ namespace CoffeeMangement.WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+
+                var href = context.Request.Path.Value;
+                if (context.Request.Path.Value == "/")
+                {
+                    context.Response.Redirect("/Scripts/clients/index.html");
+                    return;
+                }
+                //if (context.Request.Path.Value.Contains("/signage-slider") == true)
+                //{
+                //    context.Response.Redirect("/signageIndex.html");
+                //    return;
+                //}
+
+                await next.Invoke();
+            });
 
             app.UseEndpoints(endpoints =>
             {
